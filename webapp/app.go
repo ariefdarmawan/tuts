@@ -12,7 +12,7 @@ import (
 )
 
 func App() *knot.App{
-    app := knot.NewApp("procura")
+    app := knot.NewApp("tuts")
     wd, _ := os.Getwd()
     app.ViewsPath = filepath.Join(wd,"views")
     app.LayoutTemplate="_layout.html"

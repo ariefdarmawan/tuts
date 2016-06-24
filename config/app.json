@@ -1,4 +1,31 @@
 {
-    "port":9800,
-    "appname":"procura"
+    "port":9100,
+    "appname":"tuts",
+    "connections":{
+        "acl":{
+            "driver":"mongo",
+            "connectioninfo":{
+                "host":"localhost:27123",
+                "database":"ectest",
+                "user":"","password":""
+            }
+        },
+        "db":{
+            "driver":"mongo",
+            "connectioninfo":{
+                "host":"localhost:27123",
+                "database":"ectest",
+                "user":"","password":""
+            }
+        },
+        "mem":{
+            "driver":"sebardb",
+            "connectioninfo":{
+                "host":"localhost:30000",
+                "database":"ectest",
+                "user":"","password":"",
+                "config":{"storage":"memory"}
+            }
+        }
+    }
 }
